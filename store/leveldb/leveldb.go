@@ -34,10 +34,6 @@ func NewLevelDB(topic, prefix string) *LevelDB {
 
 //-----------------------with raft operation-----------------------------//
 
-func (l *LevelDB) Init() {
-	//raft.Log.
-}
-
 func (l *LevelDB) FirstIndex() (uint64, []byte, error) {
 	var index uint64
 	var key, value []byte
